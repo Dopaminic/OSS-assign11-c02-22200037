@@ -25,11 +25,6 @@ export default function CourseList() {
       { id: Date.now(), name, completed: false },
     ]);
     setNewName("");
-    setCourses((previous) =>
-      previous.map((course) =>
-        course.id === id ? { ...course, completed: !course.completed } : course,
-      ),
-    );
   }
 
   // TODO 2 (필수): 완료 상태 변경 기능을 구현하세요.
